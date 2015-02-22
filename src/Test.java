@@ -53,4 +53,21 @@ class Test
             System.out.println("Divide: Failed, expected = " + expected + ", result = " + result);
         }	
 	}
+	
+	private static void testSub()
+    {
+        int a = 6;
+        int b = 5;
+        int expected = 1;
+        BasicMath bm = new BasicMath();
+        int result = bm.subtract(a, b);
+        if (result == expected)
+        {
+            System.out.println("Subtract: OK");
+        }
+        else
+        {
+            System.out.println("Subtract: Failed, expected = " + expected + ", result = " + result);
+        }
+    }
 }
